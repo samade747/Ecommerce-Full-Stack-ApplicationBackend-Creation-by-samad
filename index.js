@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 import userRoute from './routes/user.js';
 import authRoute from './routes/auth.js';
 import productRoute from './routes/product.js';
+import cartRoute from './routes/cart.js';
+import orderRoute from './routes/order.js';
+
 
 
 dotenv.config();
@@ -14,6 +17,9 @@ app.use(express.json())
 app.use("/api/auth", authRoute)
 app.use("/api/users", userRoute)
 app.use("/api/products", productRoute)
+app.use("/api/cart", cartRoute)
+app.use("/api/orders", orderRoute)
+
 
 
 

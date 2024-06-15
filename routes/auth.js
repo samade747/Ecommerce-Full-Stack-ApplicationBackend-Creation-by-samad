@@ -1,4 +1,4 @@
-import { router } from "express";
+import router from "express";
 import User from "../models/User.js";
 import CryptoJS from "crypto-js";
 import jwt from "jsonwebtoken";
@@ -59,3 +59,6 @@ router.post("/login", async (req, res) => {
     }   
 
 });
+
+
+export default router;

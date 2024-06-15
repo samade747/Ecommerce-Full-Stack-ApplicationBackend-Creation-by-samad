@@ -68,3 +68,4 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
 });
 
 
+export default router;
